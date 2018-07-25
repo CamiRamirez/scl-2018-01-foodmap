@@ -1,0 +1,39 @@
+#body{
+  background-color: #2B2B2B;
+}
+
+/* Pantalla de inicio */
+#title{
+  color: orange;
+  text-align: center;
+  margin-top: 15% ;
+}
+
+/*Pantalla principal de app*/
+#pantallaApp{
+  display: none;
+}
+
+/*Titulo de pagina*/
+#title2{
+  color: orange;
+  text-align: center;
+  margin-top: 10%;
+}
+
+/*Input de busqueda*/
+#searchBox{
+  width: 20em;
+  margin: 5%;
+  text-align: center;
+}
+
+.fa-search{
+  color: white;
+}
+
+
+
+
+
+
