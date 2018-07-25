@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="/maps/documentation/javascript/cgc/demos.css">
+  <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Merienda+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!--Enlace de MAPS -->
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=places"></script>
   <title>Foodmap</title>
 </head>
 
@@ -19,8 +21,8 @@
       <div class="col-sm-12">
         <h1 id="title">Foodmap</h1>
       </div>
-      <div class="col-sm-12">
-        <!-- gif loading -->
+      <div class="col-sm-12" id="loading">
+        <img src="https://steemitimages.com/DQmTWvU8mjzBQA7U1mvWWcCUhQVcBCoj4Hvikd3tihoRzJQ/loading-animation2.gif" alt="">
       </div>
     </div>
 
@@ -29,37 +31,43 @@
     <div class="row" id="pantallaApp">
       <div class="col-sm">
         <h3 id="title2">Foodmap</h1>
-          <div class="col-sm">
-            <input class="form-control mr-sm-2" id="searchBox" onkeyup="onSearch()" type="search" placeholder="Búsqueda por comida..."
-              aria-label="Search">
-            <i class="fas fa-search"></i>
-          </div>
-          <div class="col-sm-12">
-              <!-- listado de restaurantes -->
-          </div>
-
-          <div class="class-sm-12">
-              <h2 id="alimentacion">Mapa</h2>
-              
-          </div>
+          <form class="form-inline md-form form-sm active-pink active-pink-2">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+          </form>
+      </div>
+      <div class="row"></div>
+      <div class="col-sm-12">
+        <h2 id="mapTitle">Mapa</h2>
+        <div class="col-sm">
+          <div id="map"></div>
+        </div>
       </div>
     </div>
+
+  </div>
+  </div>
 
 
   </div>
   <!-- termino de contenedor -->
 
-
+  <!-- Links de bootstrap y JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
     crossorigin="anonymous"></script>
+
+  <script src="https://use.fontawesome.com/7cdd7a07f8.js"></script>
+  <!-- api google maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8_-LTyQrrE07no7GCibdEGAuEcpxwBZY&callback=initMap">
+  </script>
+
   <script src="js/main.js"></script>
-  <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-    </script>
+
+
 </body>
 
 </html>

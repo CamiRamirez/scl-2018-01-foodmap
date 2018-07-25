@@ -1,13 +1,24 @@
 #body{
-  background-color: #2B2B2B;
+  background-color: whitesmoke;
+}
+
+.container-fluid{
+  width: 100%;
 }
 
 /* Pantalla de inicio */
 #title{
-  color: orange;
+  color: #CB212D;
   text-align: center;
   margin-top: 15% ;
+  font-size: 4em;
+  font-family: 'Leckerli One', cursive;
 }
+#loading{
+  text-align: center;
+  width: 3em;
+}
+
 
 /*Pantalla principal de app*/
 #pantallaApp{
@@ -16,22 +27,28 @@
 
 /*Titulo de pagina*/
 #title2{
-  color: orange;
+  color: #CB212D;
   text-align: center;
   margin-top: 10%;
+  font-family: 'Leckerli One', cursive;
 }
 
 /*Input de busqueda*/
 #searchBox{
-  width: 20em;
-  margin: 5%;
+  width: 10em;
+  position: center;
+}
+
+#mapTitle{
   text-align: center;
+  color: #CB212D;
+  font-family: 'Leckerli One', cursive;
 }
 
-.fa-search{
-  color: white;
+#map{
+  width:450px; 
+  height: 350px;
 }
-
 
 
 
