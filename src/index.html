@@ -19,7 +19,7 @@
     <!-- Pantalla de inicio que dura 3 segundos visible -->
     <div class="row" id="pantallaInicial">
       <div class="col-sm-12">
-        <h1 id="title">Foodmap</h1>
+        <h1 id="title1">Foodmap</h1>
       </div>
       <div class="col-sm-12" id="loading">
         <img src="https://steemitimages.com/DQmTWvU8mjzBQA7U1mvWWcCUhQVcBCoj4Hvikd3tihoRzJQ/loading-animation2.gif" alt="">
@@ -29,26 +29,29 @@
 
     <!-- Pantalla principal -->
     <div class="row" id="pantallaApp">
-      <div class="col-sm">
-        <h3 id="title2">Foodmap</h1>
-          <form class="form-inline md-form form-sm active-pink active-pink-2">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
-          </form>
+
+      <!-- Titulo y buscador -->
+      <div class="col-lg-6 col-centrada">
+        <h1 id="title2">Foodmap</h1>
+        <h4 id="subtitle"> ¡Busca restaurantes cerca de ti con Foodmap!</h2>
       </div>
-      <div class="row"></div>
-      <div class="col-sm-12">
-        <h2 id="mapTitle">Mapa</h2>
-        <div class="col-sm">
-          <div id="map"></div>
+
+      <!-- Mapa de geolocalizacion -->
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 id="mapTitle">Mapa</h2>
         </div>
+        <div class="col-sm-12 mapArea">
+          <input id="pac-input" class="controls" type="text" placeholder="Buscador de restaurantes...">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <div class="col-sm-12 col-centrada" id="map"></div>
+        </div>
+
       </div>
+      <!-- termina row -->
+
     </div>
-
-  </div>
-  </div>
-
-
+    <!-- termina seccion pantalla principal -->
   </div>
   <!-- termino de contenedor -->
 
@@ -62,7 +65,7 @@
 
   <script src="https://use.fontawesome.com/7cdd7a07f8.js"></script>
   <!-- api google maps -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8_-LTyQrrE07no7GCibdEGAuEcpxwBZY&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8_-LTyQrrE07no7GCibdEGAuEcpxwBZY&libraries=places&callback=initMap">
   </script>
 
   <script src="js/main.js"></script>

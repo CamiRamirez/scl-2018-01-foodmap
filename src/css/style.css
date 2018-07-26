@@ -7,11 +7,11 @@
 }
 
 /* Pantalla de inicio */
-#title{
+#title1{
   color: #CB212D;
   text-align: center;
   margin-top: 15% ;
-  font-size: 4em;
+  font-size: 5em;
   font-family: 'Leckerli One', cursive;
 }
 #loading{
@@ -23,6 +23,8 @@
 /*Pantalla principal de app*/
 #pantallaApp{
   display: none;
+  background-image: url();
+  background-size: 100%;
 }
 
 /*Titulo de pagina*/
@@ -31,11 +33,18 @@
   text-align: center;
   margin-top: 10%;
   font-family: 'Leckerli One', cursive;
+  font-size: 3.5em;
+  padding-top: 0;
+}
+#subtitle{
+  color: sandybrown;
+  text-align: center;
+  margin: 1em;
 }
 
 /*Input de busqueda*/
 #searchBox{
-  width: 10em;
+  width: 15em;
   position: center;
 }
 
@@ -46,8 +55,27 @@
 }
 
 #map{
-  width:450px; 
-  height: 350px;
+  width:50vw; 
+  height: 45vw;
+}
+
+.col-centrada{
+  float: none;
+  margin: 0 auto;
+}
+
+/*Input de busqueda en mapa*/
+
+#pac-input{
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  width: 50%;
+  margin-left: 25%;
+}
+.fa-search{
+  color: sandybrown;
 }
 
 
